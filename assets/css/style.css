@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root{
+    --VeryDarkMagenta: hsl(300, 43%, 22%);
+    --SoftPink: hsl(333, 80%, 67%);
+    --DarkGrayishMagenta: hsl(303, 10%, 53%);
+    --LightGrayishMagenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+};
+
+*, 
+*:after,
+*:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-size: 10px;
+    font-family: 'League Spartan', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+    background-position: top left, bottom right;
+    background-repeat: no-repeat no-repeat;
+    background-color: var(--White);
+}
+
+@media screen and (min-width:992px){
+    body{
+        background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+        background-position: top left, bottom right;
+        background-repeat: no-repeat no-repeat;
+        background-color: var(--White);
+    }
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    max-width: 20.5rem;
+}
+
+@media screen and (min-width:992px) {
+    main{
+        max-width: 70rem;
+        display: grid;
+        grid-template: 1fr 1fr/1fr 1fr ;
+        row-gap: 1.8rem;
+    }
+    
+}
+
+.text-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.55rem;
+    margin-bottom: 2.8rem;
+}
+
+@media screen and (min-width:992px){
+    .text-div{
+        padding-right: 7rem;
+    }
+}
+
+h1{
+    font-size: 2.3rem;
+    text-align: center;
+    color: var(--VeryDarkMagenta);
+    line-height: 2rem;
+    margin: 0;
+}
+
+@media screen and (min-width:992px){
+    h1{
+        font-size: 3.25rem;
+        text-align:start;
+        line-height: 3rem;
+    }
+}
+
+.text-div p{
+    color: var(--DarkGrayishMagenta);
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin: 0;
+}
+
+@media screen and (min-width:992px){
+    .text-div p{
+        text-align: start;
+        margin-top: .1rem;
+    }
+}
+
+.conteiner-rateds-divs{
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media screen and (min-width:992px){
+    .conteiner-rateds-divs{
+        padding-left: .6rem;
+    }
+}
+
+.rateds-divs{
+    background-color: var(--LightGrayishMagenta);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.82rem;
+    padding: 0.95rem 0;
+    border-radius: 8px;
+}
+
+@media screen and (min-width:992px){
+    .rateds-divs{
+        height: 1.7rem;
+        width: 25.8rem;
+        flex-direction: row;
+        justify-content: start;
+        padding-left: 2rem;
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width:992px){
+    #second-rated-div{
+        margin-left: 2.9rem;
+    }
+}
+
+@media screen and (min-width:992px){
+    #third-rated-div{
+        margin-left: 5.9rem;
+    }
+}
+
+.stars-divs{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.rateds-divs span{
+    color: var(--VeryDarkMagenta);
+    font-size: 1.06rem;
+    font-weight: 700;
+}
+
+.conteiner-reviews-divs{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media screen and (min-width:992px) {
+    .conteiner-reviews-divs{
+        grid-column: 1/3;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: row;
+        align-self: flex-start;
+
+    }
+}
+
+.reviews-divs{
+    background-color: var(--VeryDarkMagenta);
+    padding:2.45rem 2rem .75rem 2rem;
+    border-radius: 8px;
+}
+
+@media screen and (min-width:992px){
+    .reviews-divs{
+        width: 17.95rem;
+        height: 9.65rem;
+        padding: 2.5rem 2rem;
+    }
+}
+
+@media screen and (min-width:992px){
+    #second-rewiew-div{
+        width: 17.8rem;
+        padding:2.45rem 2rem .75rem 2rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        height: 11.5rem;
+    }
+}
+
+@media screen and (min-width:992px){
+    #third-rewiew-div{
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+}
+
+.reviews-divs p{
+    color: var(--LightGrayishMagenta);
+    font-size: 1.05rem;
+    line-height: 1.35rem;
+}
+
+.users-divs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width:992px){
+    .users-divs{
+        margin-bottom: 1.8rem;
+    }
+}
+
+.users-divs img{
+    border-radius: 50%;
+    width: 40px;
+}
+
+.names-divs{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.45rem;
+
+}
+
+.names-spans{
+    color: var(--LightGrayishMagenta);
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+@media screen and (min-width:992px){
+    .names-spans{
+        margin-bottom: 0.2rem;
+    }
+}
+
+.buyers-spans{
+    color: var(--SoftPink);
+    font-size: 1.05rem;
+}
+
+footer{
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--VeryDarkMagenta);
+}
+
+footer a{
+    text-decoration: none;
+     color: var(--DarkGrayishMagenta); 
+}
+
+footer a:hover{
+    color:var(--SoftPink)
+}
