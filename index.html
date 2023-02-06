@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA).">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
     <title>Frontend Mentor | Social proof section</title>
 
@@ -26,99 +21,97 @@
     </style>
   </head>
   <body>
-    <main>
-      <div class="text-div">
-        <h1>
+    <main class="main">
+      <div class="main__div texts-div">
+        <h1 class="main__h1">
           10,000+ of our users love our products.
         </h1>
-        <p>
+        <p class="main__p">
           We only provide great products combined with excellent customer service.
           See what our satisfied customers are saying about our services.
         </p>
       </div>
-      <div class="conteiner-rateds-divs">
-        <div class="rateds-divs">
-            <div class="stars-divs">
-              <img src="./assets/images/icon-star.svg" alt="star icon">
-              <img src="./assets/images/icon-star.svg" alt="star icon">
-              <img src="./assets/images/icon-star.svg" alt="star icon">
-              <img src="./assets/images/icon-star.svg" alt="star icon">
-              <img src="./assets/images/icon-star.svg" alt="star icon">
+      <div class="main__div rateds-div">
+        <div class="rateds-div__div rated-div">
+            <div class="rated-div__div stars-div">
+              <img class="stars-div__img" src="./assets/images/icon-star.svg" alt="star icon">
+              <img class="stars-div__img" src="./assets/images/icon-star.svg" alt="star icon">
+              <img class="stars-div__img" src="./assets/images/icon-star.svg" alt="star icon">
+              <img class="stars-div__img" src="./assets/images/icon-star.svg" alt="star icon">
+              <img class="stars-div__img" src="./assets/images/icon-star.svg" alt="star icon">
             </div>
-            <span>Rated 5 Stars in Reviews</span>
+            <span class="stars-div__span">Rated 5 Stars in Reviews</span>
         </div>
-        <div id="second-rated-div" class="rateds-divs">
-            <div class="stars-divs">
-              <img src="./assets/images/icon-star.svg" alt="star icon">
-              <img src="./assets/images/icon-star.svg" alt="star icon">
-              <img src="./assets/images/icon-star.svg" alt="star icon">
-              <img src="./assets/images/icon-star.svg" alt="star icon">
-              <img src="./assets/images/icon-star.svg" alt="star icon">
+        <div  class="rateds-div__div rated-div">
+            <div class="rated-div__div stars-div">
+              <img class="stars-div__img" src="./assets/images/icon-star.svg" alt="star icon">
+              <img class="stars-div__img" src="./assets/images/icon-star.svg" alt="star icon">
+              <img class="stars-div__img" src="./assets/images/icon-star.svg" alt="star icon">
+              <img class="stars-div__img" src="./assets/images/icon-star.svg" alt="star icon">
+              <img class="stars-div__img" src="./assets/images/icon-star.svg" alt="star icon">
             </div>
-            <span>Rated 5 Stars in Report Guru</span>
+            <span class="stars-div__span">Rated 5 Stars in Report Guru</span>
         </div>
-        <div id="third-rated-div" class="rateds-divs">
-            <div class="stars-divs">
-              <img src="./assets/images/icon-star.svg" alt="star icon">
-              <img src="./assets/images/icon-star.svg" alt="star icon">
-              <img src="./assets/images/icon-star.svg" alt="star icon">
-              <img src="./assets/images/icon-star.svg" alt="star icon">
-              <img src="./assets/images/icon-star.svg" alt="star icon">
+        <div  class="rateds-div__div rated-div">
+            <div class="rated-div__div stars-divs">
+              <img class="stars-div__img" src="./assets/images/icon-star.svg" alt="star icon">
+              <img class="stars-div__img" src="./assets/images/icon-star.svg" alt="star icon">
+              <img class="stars-div__img" src="./assets/images/icon-star.svg" alt="star icon">
+              <img class="stars-div__img" src="./assets/images/icon-star.svg" alt="star icon">
+              <img class="stars-div__img" src="./assets/images/icon-star.svg" alt="star icon">
             </div>
-            <span>Rated 5 Stars in BestTech</span>
+            <span class="stars-div__span">Rated 5 Stars in BestTech</span>
         </div>
       </div>
-      <div class="conteiner-reviews-divs">
-        <div id="first-reviews-div" class="reviews-divs">
-            <div  class="users-divs">
-              <img src="./assets/images/image-colton.jpg" alt="Colton image">
-              <div class="names-divs">
-                <span class="names-spans">Colton Smith</span>
-                <span class="buyers-spans">Verified Buyer</span>
+      <div class="main__div reviews-div">
+        <div class="reviews-div__div review-div">
+            <div class="review-div__div avatar-div">
+              <img class="avatar-div__img" src="./assets/images/image-colton.jpg" alt="Colton image">
+              <div class="avatar-div__div">
+                <span class="avatar-div__span avatar-div__span--name">Colton Smith</span>
+                <span class="avatar-div__span avatar-div__span--sub">Verified Buyer</span>
               </div>
             </div>
-            <p>
+            <p class="review-div__p">
               "We needed the same printed design as the one we had ordered a week prior.
               Not only did they find the original order, but we also received it in time.
               Excellent!"
             </p>
         </div>
-      
-        <div id="second-rewiew-div" class="reviews-divs">
-            <div class="users-divs">
-              <img src="./assets/images/image-irene.jpg" alt="Irene image">
-              <div class="names-divs">
-                <span class="names-spans">Irene Roberts </span>
-                <span class="buyers-spans">Verified Buyer</span>
+        <div class="reviews-div__div review-div">
+            <div class="review-div__div avatar-div">
+              <img class="avatar-div__img" src="./assets/images/image-irene.jpg" alt="Irene image">
+              <div class="avatar-div__div">
+                <span class="avatar-div__span avatar-div__span--name">Irene Roberts </span>
+                <span class="avatar-div__span avatar-div__span--sub">Verified Buyer</span>
               </div>
             </div>
-            <p>
+            <p class="review-div__p">
               "Customer service is always excellent and very quick turn around. Completely
               delighted with the simplicity of the purchase and the speed of delivery."
             </p>
         </div>
-      
-        <div id="third-rewiew-div" class="reviews-divs">
-            <div class="users-divs">
-              <img src="./assets/images/image-anne.jpg" alt="Anne image">
-              <div class="names-divs">
-                <span class="names-spans">Anne Wallace</span>
-                <span class="buyers-spans">Verified Buyer</span>
+        <div class="reviews-div__div review-div">
+            <div class="review-div__div avatar-div">
+              <img class="avatar-div__img" src="./assets/images/image-anne.jpg" alt="Anne image">
+              <div class="avatar-div__div">
+                <span class="avatar-div__span avatar-div__span--name">Anne Wallace</span>
+                <span class="avatar-div__span avatar-div__span--sub">Verified Buyer</span>
               </div>
             </div>
-            <p>
+            <p class="review-div__p">
               "Put an order with this company and can only praise them for the very high
               standard. Will definitely use them again and recommend them to everyone!"
             </p>
         </div>
       </div>
     </main>
-    <footer>
-      <span> 
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+    <footer class="footer">
+      <span class="footer__span"> 
+        Challenge by <a class="footer__a" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
       </span>
-      <span>
-        Coded by <a href="#">Sebastián Martínez Arango</a>.
+      <span class="footer__span">
+        Coded by <a class="footer__a" href="#">Sebastián Martínez Arango</a>.
       </span>
     </footer>
   </body>
